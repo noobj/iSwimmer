@@ -1,4 +1,7 @@
+<head>
+<link href="./script/lightbox/css/lightbox.css" rel="stylesheet" />
 
+</head>
 <style>
 ul{
 	
@@ -69,14 +72,15 @@ p{
 	font-size:30px;
 }
 
+
 </style>
 <br /><br />
 <div class="outer">
 <div class="content">
-	<a href="/iSwimer/pic/<?php echo $user->image;?>"><img class="photo" src="/iSwimer/pic/<?php echo $user->image;?>" /></a>
+	<a href="/iSwimer/pic/<?php echo $user->image;?>" data-lightbox="image<?php echo $user->id?>"  ><img class="photo" src="/iSwimer/pic/<?php echo $user->image;?>" /></a>
 <?php
 $tts = 5; //The training field start
-echo '<div class="head" >'.$user->name." <p> ".$records_item->date.'</p></div>';
+echo '<div class="head" > <a  href="/iSwimer/news/profile/'.$user->id.'">'.$user->name."</a> <p> ".$records_item->date.'</p></div>';
 
 echo "<div class='context'>".$records_item->title."</div>";
 
@@ -122,7 +126,9 @@ echo validation_errors(); ?>
 </ul>
 </div>
 </div>
-<script src="/iSwimer/script/jquery-1.8.3.min.js"></script>
+<script src="./script/lightbox/js/jquery-1.11.0.min.js"></script>
+<script src="./script/lightbox/js/lightbox.min.js"></script>
+
 <script type="text/javascript">
 	
 	function sent(oFormElement)

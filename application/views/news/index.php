@@ -1,5 +1,5 @@
 <style>
-
+<link href="/iSwimer/script/lightbox/css/lightbox.css" rel="stylesheet" />
 
 </style>
 <table  style="width:1000px">
@@ -23,3 +23,5 @@
 <?php endforeach?>
 </table>
 
+<script src="/iSwimer/script/lightbox/js/jquery-1.11.0.min.js"></script>
+<script src="/iSwimer/script/lightbox/js/lightbox.min.js"></script>

@@ -1,3 +1,8 @@
+<head>
+<link href="/iSwimer/script/lightbox/css/lightbox.css" rel="stylesheet" />
+
+</head>
+
 <style>
 div img
 {
@@ -13,7 +18,7 @@ div img
 
 }
 </style>
-	<div id="photo"><a href="/iSwimer/pic/<?php echo $photo;?>"><img src="/iSwimer/pic/<?php echo $photo;?>" /></a></div>
+	<div id="photo"><a href="/iSwimer/pic/<?php echo $photo;?>" data-lightbox="image-1" ><img src="/iSwimer/pic/<?php echo $photo;?>" /></a></div>
 	
 	<?php echo $error;?>
 	<?php echo form_open_multipart('news/do_upload');?>
@@ -43,7 +48,8 @@ div img
 <?php endforeach?>
 </table>
 	
-<script src="/iSwimer/script/jquery-1.8.3.min.js"></script>
+<script src="/iSwimer/script/lightbox/js/jquery-1.11.0.min.js"></script>
+<script src="/iSwimer/script/lightbox/js/lightbox.min.js"></script>
 <script type="text/javascript">
 	
 	

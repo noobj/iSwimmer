@@ -3,7 +3,7 @@
 <style>
 #header
 {
-background-image:url('./pic/swim_header.jpg');
+background-image:url('/iSwimer/pic/swim_header.jpg');
 height:200px;
 background-color:RoyalBlue;
 background-repeat:no-repeat;
